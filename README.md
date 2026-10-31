@@ -44,7 +44,7 @@ econ_score: [ISI: sumber / proxy (mis. jumlah POI/UMKM/pasar) dan cara normalisa
 road_dist_km: [ISI: sumber jaringan jalan dan cara menghitung jarak]
 Cara menjalankan
 
-peta_hasil.py memakai modul A (data.py, model.py, optimizers.py), jadi letakkan file-file di folder yang sama dengan kode A.
+peta_hasil.py memakai modul A (data.py, model.py, optimizers.py)
 
 pip install numpy matplotlib pandas
 
@@ -56,4 +56,4 @@ Keluaran peta_hasil.py (folder results/surabaya/): peta_hasil_sebelum_sesudah.pn
 
 Catatan
 Koordinat diproyeksikan ke km (ekuirektangular) oleh load_csv() milik A; peta mengembalikannya ke lintang/bujur.
-Hasil Simulated Annealing bersifat acak; angka bisa sedikit berbeda antar komputer walau seed sama. Untuk laporan gunakan rata-rata beberapa seed (python main.py experiments --seeds 5 --pop population.csv --cand candidates.csv).
+Hasil Simulated Annealing bersifat acak; angka bisa sedikit berbeda antar komputer walau seed sama.  rata-rata beberapa seed (python main.py experiments --seeds 5 --pop population.csv --cand candidates.csv).
